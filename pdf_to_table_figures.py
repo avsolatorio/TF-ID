@@ -60,8 +60,13 @@ def pdf_to_table_figures(pdf_path, model_id, output_dir):
 	print("=====================================")
 	print("All images saved to: ", output_dir)
 
-model_id = "yifeihu/TF-ID-large"
-pdf_path = "./pdfs/arxiv_2305_04160.pdf"
-output_dir = "./sample_output"
 
-pdf_to_table_figures(pdf_path, model_id, output_dir)
+def main(pdf_path: str, model_id: str = "yifeihu/TF-ID-large", output_dir: str = "./sample_output")
+    pdf_to_table_figures(pdf_path, model_id, output_dir)
+
+
+if __name__ == "__main__":
+    import fire
+
+    fire.Fire(main)
+

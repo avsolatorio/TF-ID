@@ -14,7 +14,13 @@ TF-ID (Table/Figure IDentifier) is a family of object detection models finetuned
 
 All TF-ID models are finetuned from [microsoft/Florence-2](https://huggingface.co/microsoft/Florence-2-large-ft) checkpoints.
 
+
 ## Sample Usage
+
+```bash
+python pdf_to_table_figures.py --pdf_path="<path-to-pdf-file>"
+```
+
 - Use `python inference.py` to extract bounding boxes from one given image
 - Use `python pdf_to_table_figures.py`to extract all tables and figures from one pdf paper and save the cropped figures and tables under `./sample_output`
 - **TF-ID-large** are used in the scripts by default. You can swtich to a different variant by changing the model_id in the scripts, but large models are always recommended.
