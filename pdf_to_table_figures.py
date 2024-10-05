@@ -61,7 +61,7 @@ def pdf_to_table_figures(pdf_path, model_id, output_dir):
 	print("All images saved to: ", output_dir)
 
 
-def main(pdf_path: str, model_id: str = "yifeihu/TF-ID-large", output_dir: str = "./sample_output")
+def main(pdf_path: str, model_id: str = "yifeihu/TF-ID-large", output_dir: str = "./sample_output"):
     pdf_to_table_figures(pdf_path, model_id, output_dir)
 
 
